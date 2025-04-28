@@ -1,4 +1,4 @@
-# Experiment 1: Entity-Relationship (ER) Diagram
+![image](https://github.com/user-attachments/assets/5daca134-2265-4b02-b0ac-8e0f915ec28f)![image](https://github.com/user-attachments/assets/dbebe1c8-ab10-4341-8c96-50958bbd3350)# Experiment 1: Entity-Relationship (ER) Diagram
 
 ## 🎯 Objective:
 To understand and apply the concepts of ER modeling by creating an ER diagram for a real-world application.
@@ -32,6 +32,7 @@ Design a database for patient management, appointments, medical records, and bil
 - Appointments with reason, time, patient-doctor link.
 - Medical records with treatments, diagnosis, test results.
 - Billing and payment details for each appointment.
+![image](https://github.com/user-attachments/assets/0b0ef1c5-8f76-47f6-8a7d-8fcd2ca25338)
 
 ---
 
@@ -44,3 +45,4 @@ Design a database for patient management, appointments, medical records, and bil
 4. Explain:
    - Why you chose the entities and relationships.
    - How you modeled prerequisites or billing.
+![image](https://github.com/user-attachments/assets/75ca7e3d-bf92-4776-966f-33676da67220)
