@@ -45,28 +45,124 @@ Design a database for patient management, appointments, medical records, and bil
    - Why you chose the entities and relationships.
    - How you modeled prerequisites or billing.
 
-# ER Diagram Submission - Student Name
+# ER Diagram Submission - Mohammed Ali.S
 
 ## Scenario Chosen:
 University / Hospital (choose one)
 
 ## ER Diagram:
-![ER Diagram](er_diagram.png)
+University:
+
+![image](https://github.com/user-attachments/assets/eff1d94b-db29-4c2f-bca1-125d5a7d2f0b)
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
+Student
+
+AdmissionNumber (PK)
+
+Name
+
+DateOfBirth
+
+ContactInfo
+
+Instructor
+
+StaffNumber (PK)
+
+Name
+
+ContactInfo
+
+Department
+
+Program
+
+ProgramID (PK)
+
+ProgramName
+
+Department
+
+Course
+
+CourseNumber (PK)
+
+CourseName
+
+Credits
+
+Enrollment
+
+AdmissionNumber (FK)
+
+CourseNumber (FK)
+
+EnrollmentDate
+
+Department
+
+DepartmentID (PK)
+
+DepartmentName
+
+Prerequisite
+
+CourseNumber (FK)
+
+PrerequisiteCourseNumber (FK)
 ...
 
 ## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
-...
+Student - Enrolls - Course
+
+Many-to-Many (since a student can enroll in many courses, and a course can have many students)
+
+Participation: Total for Student (must enroll in at least one course)
+
+Instructor - Teaches - Course
+
+One-to-Many (one instructor can teach many courses; each course taught by one instructor)
+
+Participation: Partial for Instructor
+
+Program - Offers - Course
+
+One-to-Many (each program offers multiple courses)
+
+Student - EnrolledIn - Program
+
+Many-to-One (each student belongs to one program)
+
+Department - Has - Program / Instructor
+
+One-to-Many (department has multiple programs and instructors)
+
+Course - Has - Prerequisite
+
+Recursive Relationship
+
+One-to-Many (a course can have multiple prerequisites)
+
+
 
 ## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
+The Prerequisite relationship is a recursive relationship on the Course entity. Each course can be related to another course that is a prerequisite for it. This is modeled using:
+
+CourseNumber → the course that requires prerequisites
+
+PrerequisiteCourseNumber → the course that must be completed before
+
+This helps in course planning and validation during student registration.
 
 ## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
+Separate Prerequisite entity: For flexibility and to handle multiple prerequisites per course.
 
+Associative Entity for Enrollment: To track when students enroll and to support many-to-many relationships.
+
+Department as central: Because both programs and instructors are grouped under departments.
+
+Recursive relationship: To handle course prerequisites elegantly without duplication.
 ## RESULT
+Successfully created an ER diagram that represents a university system with clear entities, relationships, and constraints, including the prerequisite mechanism for courses.
+
