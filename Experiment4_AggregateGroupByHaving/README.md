@@ -41,120 +41,158 @@ HAVING condition;
 -- Paste Question 1 here
 
 ```sql
--- Paste your SQL code below for Question 1
+SELECT Department, COUNT(*) AS "Total Students"
+FROM Students
+GROUP BY Department;
+
 ```
 
 **Output:**
 
-![Output1](output.png)
+![output1](https://github.com/user-attachments/assets/e1ae9364-c353-4c5c-9cfc-d2d15a468b9c)
 
 **Question 2**
 ---
 -- Paste Question 2 here
 
 ```sql
--- Paste your SQL code below for Question 2
+SELECT Department, AVG(Marks) AS "Average Marks"
+FROM Students
+GROUP BY Department;
+
 ```
 
 **Output:**
 
-![Output2](output.png)
+![output2](https://github.com/user-attachments/assets/2d1bd19f-64d2-4029-96ec-559af2c99dd5)
+
 
 **Question 3**
 ---
 -- Paste Question 3 here
 
 ```sql
--- Paste your SQL code below for Question 3
+SELECT Product, SUM(Sales) AS "Total Sales"
+FROM Sales
+GROUP BY Product;
+
 ```
 
 **Output:**
 
-![Output3](output.png)
+![output3](https://github.com/user-attachments/assets/987f18b5-0952-44a7-89a4-ada30c91501c)
+
 
 **Question 4**
 ---
 -- Paste Question 4 here
 
 ```sql
--- Paste your SQL code below for Question 4
+SELECT Dept, MIN(Salary) AS "Min Salary"
+FROM Employees
+GROUP BY Dept;
+
 ```
 
 **Output:**
 
-![Output4](output.png)
+![output4](https://github.com/user-attachments/assets/85b83e8f-a907-4d0f-86d5-5ce8753f78c1)
+
 
 **Question 5**
 ---
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT Dept, MAX(Salary) AS "Max Salary"
+FROM Employees
+GROUP BY Dept;
+
 ```
 
 **Output:**
 
-![Output5](output.png)
+![output5](https://github.com/user-attachments/assets/c8ff36dd-0092-46d7-941f-6ef6284c6c91)
+
 
 **Question 6**
 ---
 -- Paste Question 6 here
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT Region, COUNT(*) AS "Sales Count"
+FROM Sales
+GROUP BY Region;
+
 ```
 
 **Output:**
 
-![Output6](output.png)
+![output6](https://github.com/user-attachments/assets/f98e98ae-c6e0-444c-969f-c46533b0d61c)
+
 
 **Question 7**
 ---
 -- Paste Question 7 here
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT Item, AVG(Price) AS "AVG(Price)"
+FROM Products
+GROUP BY Item;
+
 ```
 
 **Output:**
 
-![Output7](output.png)
+![output7](https://github.com/user-attachments/assets/796e4703-1622-4b21-87ef-ebb4c2512432)
+
 
 **Question 8**
 ---
 -- Paste Question 8 here
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT Course, SUM(Enrolled) AS "SUM(Enrolled)"
+FROM Courses
+GROUP BY Course;
+
 ```
 
 **Output:**
 
-![Output8](output.png)
+![output8](https://github.com/user-attachments/assets/acf2b945-5ea9-4ae5-9659-62f9a99a59d0)
+
 
 **Question 9**
 ---
 -- Paste Question 9 here
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT City, COUNT(*) AS "COUNT(*)"
+FROM Users
+GROUP BY City;
+
 ```
 
 **Output:**
 
-![Output9](output.png)
+![output9](https://github.com/user-attachments/assets/85b4ef08-fe0d-4db3-9dba-9aec729ae9cf)
+
 
 **Question 10**
 ---
 -- Paste Question 10 here
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT Employee, SUM(Hours) AS "Total Hours"
+FROM Timesheet
+GROUP BY Employee;
+
 ```
 
 **Output:**
 
-![Output10](output.png)
+![output10](https://github.com/user-attachments/assets/aa612ae0-05b7-4abd-9ca3-87d0f4115c03)
 
 
 ## RESULT
