@@ -57,7 +57,9 @@ ON table1.column = table2.column;
 -- Paste Question 1 here
 
 ```sql
--- Paste your SQL code below for Question 1
+SELECT e.employee_id, e.name, d.department_name
+FROM employees e
+INNER JOIN departments d ON e.dept_id = d.department_id;
 ```
 
 **Output:**
@@ -69,7 +71,10 @@ ON table1.column = table2.column;
 -- Paste Question 2 here
 
 ```sql
--- Paste your SQL code below for Question 2
+SELECT s.student_id, s.name, m.course_name
+FROM students s
+LEFT JOIN marks m ON s.student_id = m.student_id;
+
 ```
 
 **Output:**
@@ -81,7 +86,10 @@ ON table1.column = table2.column;
 -- Paste Question 3 here
 
 ```sql
--- Paste your SQL code below for Question 3
+SELECT p.product_name, s.supplier_name
+FROM products p
+RIGHT JOIN suppliers s ON p.supplier_id = s.supplier_id;
+
 ```
 
 **Output:**
@@ -93,7 +101,10 @@ ON table1.column = table2.column;
 -- Paste Question 4 here
 
 ```sql
--- Paste your SQL code below for Question 4
+SELECT a.author_name, b.book_title
+FROM authors a
+FULL OUTER JOIN books b ON a.author_id = b.author_id;
+
 ```
 
 **Output:**
@@ -105,7 +116,10 @@ ON table1.column = table2.column;
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT o.order_id, c.customer_name
+FROM orders o
+INNER JOIN customers c ON o.customer_id = c.customer_id;
+
 ```
 
 **Output:**
@@ -117,7 +131,10 @@ ON table1.column = table2.column;
 -- Paste Question 6 here
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT t.teacher_name, c.class_name
+FROM teachers t
+LEFT JOIN classes c ON t.teacher_id = c.class_teacher_id;
+
 ```
 
 **Output:**
@@ -129,7 +146,10 @@ ON table1.column = table2.column;
 -- Paste Question 7 here
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT c.course_name, s.name
+FROM courses c
+RIGHT JOIN students s ON c.course_id = s.course_id;
+
 ```
 
 **Output:**
@@ -141,7 +161,10 @@ ON table1.column = table2.column;
 -- Paste Question 8 here
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT p.project_title, t.team_name
+FROM projects p
+INNER JOIN teams t ON p.team_id = t.team_id;
+
 ```
 
 **Output:**
@@ -153,7 +176,10 @@ ON table1.column = table2.column;
 -- Paste Question 9 here
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT p.patient_name, pr.medicine
+FROM patients p
+LEFT JOIN prescriptions pr ON p.patient_id = pr.patient_id;
+
 ```
 
 **Output:**
@@ -165,7 +191,9 @@ ON table1.column = table2.column;
 -- Paste Question 10 here
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT p.product_name, c.category_name
+FROM products p
+RIGHT JOIN categories c ON p.category_id = c.category_id;
 ```
 
 **Output:**
