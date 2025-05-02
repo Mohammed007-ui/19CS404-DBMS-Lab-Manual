@@ -1,4 +1,4 @@
-# Experiment 6: Joins
+![image](https://github.com/user-attachments/assets/3d1fe984-f2a4-4342-96fd-991ad07410d8)![image](https://github.com/user-attachments/assets/90946268-67a4-4384-b4da-0a85cd352c19)# Experiment 6: Joins
 
 ## AIM
 To study and implement different types of joins.
@@ -57,67 +57,109 @@ ON table1.column = table2.column;
 -- Paste Question 1 here
 
 ```sql
--- Paste your SQL code below for Question 1
+SELECT p.first_name AS patient_name, t.test_name
+FROM patients p
+INNER JOIN test_results t ON p.patient_id = t.patient_id;
 ```
 
 **Output:**
 
-![Output1](output.png)
+
+![image](https://github.com/user-attachments/assets/4752684e-715f-4c12-ac5a-c690e857740e)
+
 
 **Question 2**
 ---
 -- Paste Question 2 here
 
 ```sql
--- Paste your SQL code below for Question 2
+SELECT 
+    o.ord_no,
+    o.ord_date,
+    o.purch_amt,
+    c.cust_name AS "Customer Name",
+    c.grade,
+    s.name AS "Salesman",
+    s.commission
+FROM orders o
+JOIN customer c ON o.customer_id = c.customer_id
+JOIN salesman s ON o.salesman_id = s.salesman_id;
+
 ```
 
 **Output:**
 
-![Output2](output.png)
+
+![image](https://github.com/user-attachments/assets/e2f8d7aa-c07e-43b1-9da4-53ac1006de64)
 
 **Question 3**
 ---
 -- Paste Question 3 here
 
 ```sql
--- Paste your SQL code below for Question 3
+
+SELECT 
+    o.ord_no,
+    o.purch_amt,
+    c.cust_name,
+    c.city
+FROM orders o
+JOIN customer c ON o.customer_id = c.customer_id
+WHERE o.purch_amt BETWEEN 500 AND 2000;
+
 ```
 
 **Output:**
 
-![Output3](output.png)
+
+![image](https://github.com/user-attachments/assets/f9dac91f-f7ad-47d0-a792-ac3f9311e546)
 
 **Question 4**
 ---
 -- Paste Question 4 here
 
 ```sql
--- Paste your SQL code below for Question 4
+
+SELECT 
+    c.cust_name,
+    c.city AS city,
+    c.grade,
+    s.name AS Salesman,
+    s.city AS city
+FROM customer c
+JOIN salesman s ON c.salesman_id = s.salesman_id
+WHERE c.grade < 300
+ORDER BY c.customer_id;
+
 ```
 
 **Output:**
 
-![Output4](output.png)
+
+![image](https://github.com/user-attachments/assets/77d16fff-4293-4a50-813e-9c5b7e518838)
 
 **Question 5**
 ---
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT s.name
+FROM salesman s
+LEFT JOIN customer c ON s.salesman_id = c.salesman_id
+WHERE c.city = 'London';
+
 ```
 
 **Output:**
 
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/967f71ee-4862-4282-97e9-6fc336abdbbd)
 
 **Question 6**
 ---
 -- Paste Question 6 here
 
 ```sql
--- Paste your SQL code below for Question 6
+
 ```
 
 **Output:**
