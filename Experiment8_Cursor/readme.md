@@ -78,6 +78,7 @@ END;
 
 **Output:**  
 The program should display the employee details or an error message.
+![image](https://github.com/user-attachments/assets/1deb3b33-04ec-4fe9-b67b-acd0cb9e09a2)
 
 ---
 
@@ -98,6 +99,8 @@ The program should display the employee details or an error message.
 **Output:**  
 The program should display the employee details within the specified salary range or an error message if no data is found.
 
+![image](https://github.com/user-attachments/assets/2942bb85-0b72-4ff4-81c2-5e1fa91cd75b)
+
 ---
 
 ### **Question 3: Cursor FOR Loop with Exception Handling**
@@ -116,6 +119,8 @@ The program should display the employee details within the specified salary rang
 
 **Output:**  
 The program should display employee names with their department numbers or the appropriate error message if no data is found.
+
+![image](https://github.com/user-attachments/assets/6f62b307-6c7c-4576-a3ef-93b982464ff5)
 
 ---
 
@@ -136,6 +141,8 @@ The program should display employee names with their department numbers or the a
 **Output:**  
 The program should display employee records or the appropriate error message if no data is found.
 
+![image](https://github.com/user-attachments/assets/02f26116-7cf3-4dbb-b5fe-3cfdd21ac137)
+
 ---
 
 ### **Question 5: Cursor with FOR UPDATE Clause and Exception Handling**
@@ -154,6 +161,8 @@ The program should display employee records or the appropriate error message if 
 
 **Output:**  
 The program should update employee salaries and display a message, or it should display an error message if no data is found.
+
+![image](https://github.com/user-attachments/assets/4ac9feee-adbe-430b-9b09-2ed5e665e1f0)
 
 ---
 
