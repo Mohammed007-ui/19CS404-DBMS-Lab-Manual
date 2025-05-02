@@ -62,6 +62,7 @@ Key Differences:
 
 **Expected Output:**  
 Square of 6 is 36
+![image](https://github.com/user-attachments/assets/2be20e3d-5a67-415c-aae2-6e6f52aea2d8)
 
 ---
 
@@ -76,6 +77,7 @@ Square of 6 is 36
 
 **Expected Output:**  
 Factorial of 5 is 120
+![image](https://github.com/user-attachments/assets/06d3ccde-56ed-4def-9948-8c2395165491)
 
 ---
 
@@ -89,6 +91,7 @@ Factorial of 5 is 120
 
 **Expected Output:**  
 12 is Even
+![image](https://github.com/user-attachments/assets/dc19346e-8939-4581-b232-3f1b6cab9981)
 
 ---
 
@@ -103,6 +106,7 @@ Factorial of 5 is 120
 
 **Expected Output:**  
 Reversed number of 1234 is 4321
+![image](https://github.com/user-attachments/assets/225a2b4c-9960-4dd7-a284-6d3b12d4b2c3)
 
 ---
 
@@ -121,6 +125,8 @@ Multiplication table of 5:
 5 x 3 = 15  
 ...  
 5 x 10 = 50
+![image](https://github.com/user-attachments/assets/181cb968-bbdc-4ac5-9e16-e84f87ac0224)
 
+---
 ## RESULT
 Thus, the PL/SQL programs using procedures and functions were written, compiled, and executed successfully.
