@@ -41,7 +41,8 @@ DROP VIEW view_name;
 -- Paste Question 1 here
 
 ```sql
--- Paste your SQL code below for Question 1
+SELECT * FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
 ```
 
 **Output:**
@@ -53,7 +54,11 @@ DROP VIEW view_name;
 -- Paste Question 2 here
 
 ```sql
--- Paste your SQL code below for Question 2
+CREATE VIEW sales_employees AS
+SELECT employee_id, first_name, last_name, department
+FROM employees
+WHERE department = 'Sales';
+
 ```
 
 **Output:**
@@ -65,7 +70,11 @@ DROP VIEW view_name;
 -- Paste Question 3 here
 
 ```sql
--- Paste your SQL code below for Question 3
+SELECT department, COUNT(*) AS num_employees
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 5;
+
 ```
 
 **Output:**
@@ -77,7 +86,10 @@ DROP VIEW view_name;
 -- Paste Question 4 here
 
 ```sql
--- Paste your SQL code below for Question 4
+SELECT first_name, last_name, department
+FROM employees
+WHERE department = (SELECT department FROM employees WHERE first_name = 'John' AND last_name = 'Doe');
+
 ```
 
 **Output:**
@@ -89,7 +101,10 @@ DROP VIEW view_name;
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+CREATE VIEW high_salary_employees AS
+SELECT employee_id, first_name, last_name, salary
+FROM employees
+WHERE salary > 5000;
 ```
 
 **Output:**
@@ -101,7 +116,10 @@ DROP VIEW view_name;
 -- Paste Question 6 here
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT employee_id, first_name, last_name, job_title
+FROM employees
+WHERE job_title = 'Manager';
+
 ```
 
 **Output:**
@@ -113,7 +131,10 @@ DROP VIEW view_name;
 -- Paste Question 7 here
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT e.first_name, e.last_name, e.salary, e.department
+FROM employees e
+WHERE e.salary > (SELECT AVG(salary) FROM employees WHERE department = e.department);
+
 ```
 
 **Output:**
@@ -125,7 +146,11 @@ DROP VIEW view_name;
 -- Paste Question 8 here
 
 ```sql
--- Paste your SQL code below for Question 8
+CREATE VIEW moderate_salary_employees AS
+SELECT employee_id, first_name, last_name, salary
+FROM employees
+WHERE salary BETWEEN 4000 AND 6000;
+
 ```
 
 **Output:**
@@ -137,7 +162,10 @@ DROP VIEW view_name;
 -- Paste Question 9 here
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT first_name, last_name, department
+FROM employees
+WHERE department != 'HR';
+
 ```
 
 **Output:**
@@ -149,7 +177,10 @@ DROP VIEW view_name;
 -- Paste Question 10 here
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT first_name, last_name
+FROM employees
+WHERE first_name LIKE 'A%';
+
 ```
 
 **Output:**
