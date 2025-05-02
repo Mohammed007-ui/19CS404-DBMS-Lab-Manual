@@ -65,6 +65,7 @@ Sum of first 10 natural numbers is: 55
 **Expected Output:**  
 n = 7  
 Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
+![image](https://github.com/user-attachments/assets/79af3aa7-1ecc-4f4c-aedc-b2e5b58a1b42)
 
 ---
 
