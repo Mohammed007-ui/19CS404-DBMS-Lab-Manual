@@ -36,6 +36,7 @@ END;
 
 **Expected Output:**  
 Greater number is: 80
+![image](https://github.com/user-attachments/assets/44fcbc07-4b38-4438-883c-4e587a2d5018)
 
 ---
 
@@ -49,6 +50,7 @@ Greater number is: 80
 
 **Expected Output:**  
 Sum of first 10 natural numbers is: 55
+![image](https://github.com/user-attachments/assets/4f699769-2b39-4cb4-8822-8f9de284ab3b)
 
 ---
 
@@ -76,6 +78,7 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 **Expected Output:**  
 n = 1535  
 Reversed number is 5351
+![image](https://github.com/user-attachments/assets/54784661-a9fc-4c3e-a2bc-65f48c6c6cb1)
 
 ---
 
@@ -85,10 +88,12 @@ Reversed number is 5351
 - Declare three numeric variables `a`, `b`, and `c`.
 - Use nested `IF-ELSIF-ELSE` conditions to find the largest among the three.
 - Display the largest number.
+![image](https://github.com/user-attachments/assets/f36a0945-3d50-4478-9165-da60dbd60abe)
 
 **Expected Output:**  
 a = 10, b = 9, c = 15  
 Largest of three number is 15
 
+---
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
