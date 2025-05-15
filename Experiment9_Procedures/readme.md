@@ -59,6 +59,19 @@ Key Differences:
 - Inside the procedure, compute the square of the input number.
 - Use `DBMS_OUTPUT.PUT_LINE` to display the result.
 - Call the procedure with a number as input.
+```
+SET SERVEROUTPUT ON;
+
+DECLARE
+    num NUMBER := 6;
+    sq NUMBER;
+BEGIN
+    sq := num * num;
+    DBMS_OUTPUT.PUT_LINE('Square of ' || num || ' is ' || sq);
+END;
+/
+```
+![image](https://github.com/user-attachments/assets/0b0a3e7e-0423-431d-b471-92cdfedce1be)
 
 **Expected Output:**  
 Square of 6 is 36
@@ -76,6 +89,22 @@ Square of 6 is 36
 
 **Expected Output:**  
 Factorial of 5 is 120
+```
+SET SERVEROUTPUT ON;
+
+DECLARE
+    n NUMBER := 5;
+    fact NUMBER := 1;
+BEGIN
+    FOR i IN 1..n LOOP
+        fact := fact * i;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE('Factorial of ' || n || ' is ' || fact);
+END;
+/
+```
+![image](https://github.com/user-attachments/assets/99d5a156-7682-4145-b0f6-8075a0671102)
+
 
 ---
 
@@ -89,6 +118,22 @@ Factorial of 5 is 120
 
 **Expected Output:**  
 12 is Even
+```
+SET SERVEROUTPUT ON;
+
+DECLARE
+    n NUMBER := 12;
+BEGIN
+    IF MOD(n, 2) = 0 THEN
+        DBMS_OUTPUT.PUT_LINE(n || ' is Even');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE(n || ' is Odd');
+    END IF;
+END;
+/
+
+```
+![image](https://github.com/user-attachments/assets/3665f28a-d9e5-48de-a68f-03faa7f6d5f9)
 
 ---
 
@@ -103,6 +148,26 @@ Factorial of 5 is 120
 
 **Expected Output:**  
 Reversed number of 1234 is 4321
+```
+SET SERVEROUTPUT ON;
+
+DECLARE
+    n NUMBER := 1234;
+    rev NUMBER := 0;
+    rem NUMBER;
+    temp NUMBER := n;
+BEGIN
+    WHILE temp > 0 LOOP
+        rem := MOD(temp, 10);
+        rev := rev * 10 + rem;
+        temp := TRUNC(temp / 10);
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE('Reversed number of ' || n || ' is ' || rev);
+END;
+/
+```
+![image](https://github.com/user-attachments/assets/97bbbf15-bdd8-4c1e-99a8-ed66d9894e43)
+
 
 ---
 
@@ -113,6 +178,20 @@ Reversed number of 1234 is 4321
 - Accept an input number.
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using `DBMS_OUTPUT.PUT_LINE`.
+
+```
+SET SERVEROUTPUT ON;
+
+DECLARE
+    n NUMBER := 5;
+BEGIN
+    FOR i IN 1..10 LOOP
+        DBMS_OUTPUT.PUT_LINE(n || ' x ' || i || ' = ' || (n * i));
+    END LOOP;
+END;
+/
+```
+![image](https://github.com/user-attachments/assets/351e1825-d500-4c24-92e7-924ef9536ca4)
 
 **Expected Output:**  
 Multiplication table of 5:  
